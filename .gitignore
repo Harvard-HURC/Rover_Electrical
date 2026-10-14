@@ -43,3 +43,6 @@ fp-info-cache
 *.kicad_prl
 
 .DS_Store
+
+# Restored folders
+_restore*/
