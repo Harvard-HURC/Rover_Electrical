@@ -2538,27 +2538,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "teensy:Teensy4.1"
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 64.77 0)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Teensy4.1"
-				(at 0 62.23 0)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2568,6 +2574,115 @@
 				)
 			)
 			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "teensy:Teensy4.1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U1"
+				(at 0 66.04 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Teensy4.1"
+				(at 0 63.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "teensy:Teensy41"
 				(at -10.16 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3443,24 +3558,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 27.94 52.07 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "47"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 27.94 54.61 180)
 					(length 5.08)
@@ -3846,6 +3943,26 @@
 					)
 				)
 			)
+			(symbol "Teensy4.1_1_0"
+				(pin power_in line
+					(at 27.94 52.07 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 			(symbol "Teensy4.1_1_1"
 				(pin power_in line
 					(at -27.94 54.61 0)
@@ -3986,6 +4103,12 @@
 		(uuid "24ab76c6-68d3-48bd-a485-240b6254691f")
 	)
 	(junction
+		(at 87.63 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "264c48bc-4df1-42ab-9ea1-0ea2939da898")
+	)
+	(junction
 		(at 34.29 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4022,6 +4145,12 @@
 		(uuid "70600d63-b929-4841-9dfd-6a66b1814eda")
 	)
 	(junction
+		(at 195.58 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "813f9337-8b2a-40a0-80bb-af4305063d4f")
+	)
+	(junction
 		(at 135.89 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4046,6 +4175,12 @@
 		(uuid "95ac9d7a-bef3-4376-bdff-5762dd8b4299")
 	)
 	(junction
+		(at 124.46 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9696877a-1fc4-43fe-880b-6e577b5e5073")
+	)
+	(junction
 		(at 195.58 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4064,6 +4199,12 @@
 		(uuid "adbad338-ac05-470c-a790-adfefef1464c")
 	)
 	(junction
+		(at 128.27 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afc13f6f-89ed-4a4f-a800-3378693b14d2")
+	)
+	(junction
 		(at 208.28 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4074,6 +4215,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce8a7af0-aa05-4f9c-ae42-cc1301a21c68")
+	)
+	(junction
+		(at 173.99 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0571331-0e5c-4c51-9cd9-5f7019feb08a")
 	)
 	(no_connect
 		(at 119.38 135.89)
@@ -4322,6 +4469,16 @@
 			(type default)
 		)
 		(uuid "14f4db65-1b2b-4333-bb65-f3c07b765254")
+	)
+	(wire
+		(pts
+			(xy 119.38 68.58) (xy 124.46 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15b66558-686f-4b4f-bfce-b5d5e2d932b0")
 	)
 	(wire
 		(pts
@@ -4645,6 +4802,26 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 109.22) (xy 173.99 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ffd8371-20f9-4d40-8658-0f0d51c3423a")
+	)
+	(wire
+		(pts
+			(xy 124.46 68.58) (xy 128.27 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6362970b-c823-44ae-a7fa-22c54e651e24")
+	)
+	(wire
+		(pts
 			(xy 52.07 73.66) (xy 58.42 73.66)
 		)
 		(stroke
@@ -4755,6 +4932,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 57.15) (xy 128.27 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819a5799-ecc4-4aa1-96fa-d0c8426fbb14")
+	)
+	(wire
+		(pts
 			(xy 63.5 66.04) (xy 63.5 63.5)
 		)
 		(stroke
@@ -4775,7 +4962,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 60.96) (xy 128.27 63.5)
+			(xy 128.27 55.88) (xy 128.27 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4875,6 +5062,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 99.06) (xy 195.58 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0f3fb6-262d-4d1d-8797-f89255afc495")
+	)
+	(wire
+		(pts
 			(xy 137.16 63.5) (xy 137.16 64.77)
 		)
 		(stroke
@@ -4955,17 +5152,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 144.78) (xy 63.5 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1daa598-d72f-4247-8727-47ad0e94e8a2")
-	)
-	(wire
-		(pts
-			(xy 195.58 100.33) (xy 195.58 101.6)
+			(xy 195.58 97.79) (xy 195.58 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5125,6 +5312,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 110.49) (xy 173.99 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2edd880-6689-4f2a-b353-ce560b598437")
+	)
+	(wire
+		(pts
 			(xy 52.07 68.58) (xy 63.5 68.58)
 		)
 		(stroke
@@ -5132,6 +5329,16 @@
 			(type default)
 		)
 		(uuid "f2f73153-2146-4e69-9ebf-0f4c99e91e00")
+	)
+	(wire
+		(pts
+			(xy 58.42 144.78) (xy 63.5 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63f43f6-e5a0-4fac-8863-1bf86bac6fe2")
 	)
 	(wire
 		(pts
@@ -5910,7 +6117,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 128.27 60.96 0)
+		(at 128.27 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5921,7 +6128,7 @@
 		(fields_autoplaced yes)
 		(uuid "172235d0-bd08-4118-95a0-4384b625a3af")
 		(property "Reference" "#PWR013"
-			(at 128.27 64.77 0)
+			(at 128.27 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5932,7 +6139,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 128.27 55.88 0)
+			(at 128.27 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5942,7 +6149,7 @@
 			)
 		)
 		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
-			(at 128.27 60.96 0)
+			(at 128.27 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5953,7 +6160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 60.96 0)
+			(at 128.27 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5964,7 +6171,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 128.27 60.96 0)
+			(at 128.27 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6772,6 +6979,163 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "347e2912-3b86-4092-a1c5-dbdb4905e39e")
+		(property "Reference" "#FLG04"
+			(at 87.63 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 87.63 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f04d9c81-7ba0-4063-8556-a87ec2b81327")
+		)
+		(instances
+			(project "Rover_PDB"
+				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 128.27 57.15 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35c6e60b-e618-4311-93dc-86f79ea12456")
+		(property "Reference" "#FLG01"
+			(at 126.365 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 124.46 57.1499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 128.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 128.27 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e73d6687-72f6-493d-884c-e59ca6253e99")
+		)
+		(instances
+			(project "Rover_PDB"
+				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Fan")
 		(at 208.28 109.22 0)
 		(unit 1)
@@ -7054,7 +7418,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 134.874 105.156 90)
 			(hide yes)
 			(show_name no)
@@ -7181,8 +7545,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 195.58 100.33 0)
+		(lib_id "power:PWR_FLAG")
+		(at 195.58 99.06 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7191,9 +7555,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "58a9a3c1-a4dc-4334-a726-30c456923314")
-		(property "Reference" "#PWR012"
-			(at 195.58 104.14 0)
+		(uuid "58769d48-33a6-4e1f-a653-3446c5eeaeec")
+		(property "Reference" "#FLG03"
+			(at 197.485 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7203,18 +7567,19 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
-			(at 195.58 95.25 0)
+		(property "Value" "PWR_FLAG"
+			(at 199.39 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 195.58 100.33 0)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 195.58 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7225,7 +7590,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 100.33 0)
+			(at 195.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 195.58 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7e69bb3-0b9b-4925-9b47-2fd1fbbac064")
+		)
+		(instances
+			(project "Rover_PDB"
+				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 195.58 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58a9a3c1-a4dc-4334-a726-30c456923314")
+		(property "Reference" "#PWR012"
+			(at 195.58 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+24V"
+			(at 195.58 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7236,7 +7679,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 195.58 100.33 0)
+			(at 195.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7292,7 +7735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 44.45 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -7605,7 +8048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 160.02 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7655,7 +8098,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 144.78 0)
+		(at 58.42 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7665,7 +8108,7 @@
 		(dnp no)
 		(uuid "6b51fb32-0a60-4f46-801a-e4fefe8cd653")
 		(property "Reference" "#PWR01"
-			(at 60.96 151.13 0)
+			(at 58.42 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7676,7 +8119,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 148.082 90)
+			(at 55.88 148.082 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7687,7 +8130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 144.78 0)
+			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7698,7 +8141,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 144.78 0)
+			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7709,7 +8152,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 144.78 0)
+			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7764,7 +8207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 31.496 23.114 90)
 			(hide yes)
 			(show_name no)
@@ -7814,7 +8257,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 173.99 110.49 0)
+		(at 173.99 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7825,7 +8268,7 @@
 		(fields_autoplaced yes)
 		(uuid "71b212c1-a408-4053-a498-ffc7e6ea4463")
 		(property "Reference" "#PWR019"
-			(at 173.99 114.3 0)
+			(at 173.99 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7836,7 +8279,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 173.99 105.41 0)
+			(at 173.99 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7846,7 +8289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 110.49 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,7 +8300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 110.49 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7868,7 +8311,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 173.99 110.49 0)
+			(at 173.99 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8165,7 +8608,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -8292,6 +8735,84 @@
 			(project "Rover_PDB"
 				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 124.46 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e292ac7-ed20-40a4-bdc6-8e1d69c2f712")
+		(property "Reference" "#FLG05"
+			(at 124.46 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 124.46 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 124.46 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 124.46 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc9f9148-92c1-450a-9654-f5cdd5f460ce")
+		)
+		(instances
+			(project "Rover_PDB"
+				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -8448,7 +8969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 29.464 40.386 90)
 			(hide yes)
 			(show_name no)
@@ -8606,7 +9127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_01005_0402Metric"
 			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8840,6 +9361,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 172.72 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a47df6fd-72c2-44f8-8543-85e1489e4936")
+		(property "Reference" "#FLG02"
+			(at 170.815 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 168.91 110.4899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 172.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "105a3e13-e8d5-4ea0-b733-492be6d726db")
+		)
+		(instances
+			(project "Rover_PDB"
+				(path "/1d8f27e2-b230-4ef2-93e1-1a59415140e6/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 30.48 44.45 180)
 		(unit 1)
@@ -8918,7 +9518,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 68.58 90)
+		(at 128.27 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8928,7 +9528,7 @@
 		(dnp no)
 		(uuid "adf609bb-ee2d-4821-91db-9f14ab310f1c")
 		(property "Reference" "#PWR02"
-			(at 125.73 68.58 0)
+			(at 128.27 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8939,7 +9539,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 122.428 68.58 90)
+			(at 128.27 71.628 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8950,7 +9550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 68.58 0)
+			(at 128.27 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8961,7 +9561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 68.58 0)
+			(at 128.27 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8972,7 +9572,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 68.58 0)
+			(at 128.27 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9182,7 +9782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 35.306 20.574 90)
 			(hide yes)
 			(show_name no)
@@ -9503,7 +10103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 44.45 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -9861,7 +10461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 136.906 95.504 90)
 			(hide yes)
 			(show_name no)
@@ -10295,7 +10895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_01005_0402Metric"
 			(at 37.084 37.846 90)
 			(hide yes)
 			(show_name no)
