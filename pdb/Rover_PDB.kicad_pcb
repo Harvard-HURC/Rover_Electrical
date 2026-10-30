@@ -3833,7 +3833,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small_US"
+		(property "Value" "10k"
 			(at 0 1 0)
 			(layer "F.Fab")
 			(uuid "5ce8aa5d-b270-4611-88ba-039dc7b4a783")
@@ -3942,7 +3942,7 @@
 			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net "Net-(C2-Pad1)")
+			(net "Net-(U1-22_A8_CTX1)")
 			(pintype "passive")
 			(uuid "1b434e0f-f46a-4dd1-af1d-4545199a956b")
 		)
@@ -3951,7 +3951,7 @@
 			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-22_A8_CTX1)")
+			(net "GND")
 			(pintype "passive")
 			(uuid "d03c0d82-cb7f-48e3-9032-11cfb6e8a1d4")
 		)
@@ -7032,7 +7032,6 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/3b0a8c82-c99b-49b6-94bc-5fcff51bb6a4/73f92e67-1bbe-4fb8-a833-3d0270c4957f")
 		(sheetname "/Digital Control/")
 		(sheetfile "digital_control.kicad_sch")
 		(units
